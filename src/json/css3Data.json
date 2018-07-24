@@ -1,0 +1,57 @@
+{
+    "data": [
+        {
+            "cn": "属性",
+            "en": "Properties",
+            "dataList": [
+                {
+                    "cn": "定位",
+                    "en": "Positioning",
+                    "secList": [
+                        {
+                            "name": "position",
+                            "key": [
+                                {
+                                    "name": "static",
+                                    "css3": false
+                                },
+                                {
+                                    "name": "relative",
+                                    "css3": false
+                                },
+                                {
+                                    "name": "absolute",
+                                    "css3": false
+                                },
+                                {
+                                    "name": "fixed",
+                                    "css3": false
+                                },
+                                {
+                                    "name": "center",
+                                    "css3": true
+                                },
+                                {
+                                    "name": "page",
+                                    "css3": true
+                                },
+                                {
+                                    "name": "sticky",
+                                    "css3": true
+                                }
+                            ],
+                            "default": "static",
+                            "apply":[
+                            	"除display属性定义为table-column-group",
+                            	"table-column之外的所有元素"
+                            ]
+                        },
+                        {
+                            "name": "z-index"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
