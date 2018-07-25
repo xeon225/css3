@@ -1,15 +1,16 @@
 <template>
   <div id="app" class="flex-container top paddingt20">
     <div class="nav borderr fs-14 text-dark lh-22 paddingl20">
-      <div v-for="itemO in data">
+      <div v-for="(itemO,$indexO) in data">
         <div class="paddingh20 marginv5" style="border-left:3px solid #3bb4f2">
           <span v-text="itemO.cn" style="font-weight: 700;"></span> <span v-text="itemO.en" class="fs-10"></span>
         </div>
-        <div v-for="itemS in itemO.dataList">
+        <div v-for="(itemS,$indexS) in itemO.dataList">
           <div class="lh-30 navHover paddingl20">
             <span v-text="itemS.cn" style="color:#777"></span> <span v-text="itemS.en" class="fs-10" style="color:#aaa"></span>
           </div>
-          <div v-for="itemT in itemS.secList" v-text="itemT.name" class="lh-28 navHover paddingl20 fs-12" style="color:#777"></div>
+
+          <router-link :to="{path:'/default',query: {id1: $indexO,id2: $indexS,id3: $indexT}}" v-for="(itemT,$indexT) in itemS.secList" v-text="itemT.name" class="lh-28 navHover paddingl20 fs-12 dis-b" style="color:#777"></router-link>
         </div>
       </div>
     </div>

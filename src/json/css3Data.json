@@ -13,38 +13,49 @@
                             "key": [
                                 {
                                     "name": "static",
-                                    "css3": false
+                                    "css3": false,
+                                    "content": "对象遵循常规流。此时4个定位偏移属性不会被应用。"
                                 },
                                 {
                                     "name": "relative",
-                                    "css3": false
+                                    "css3": false,
+                                    "content": "对象遵循常规流，并且参照自身在常规流中的位置通过top，right，bottom，left这4个定位偏移属性进行偏移时不会影响常规流中的任何元素。"
                                 },
                                 {
                                     "name": "absolute",
-                                    "css3": false
+                                    "css3": false,
+                                    "content": "对象脱离常规流，此时偏移属性参照的是离自身最近的定位祖先元素，如果没有定位的祖先元素，则一直回溯到body元素。盒子的偏移位置不影响常规流中的任何元素，其margin不与其他任何margin折叠。"
                                 },
                                 {
                                     "name": "fixed",
-                                    "css3": false
+                                    "css3": false,
+                                    "content": "与absolute一致，但偏移定位是以窗口为参考。当出现滚动条时，对象不会随着滚动。"
                                 },
                                 {
                                     "name": "center",
-                                    "css3": true
+                                    "css3": true,
+                                    "content": "与absolute一致，但偏移定位是以定位祖先元素的中心点为参考。盒子在其包含容器垂直水平居中。"
                                 },
                                 {
                                     "name": "page",
-                                    "css3": true
+                                    "css3": true,
+                                    "content": "与absolute一致。元素在分页媒体或者区域块内，元素的包含块始终是初始包含块，否则取决于每个absolute模式。"
                                 },
                                 {
                                     "name": "sticky",
-                                    "css3": true
+                                    "css3": true,
+                                    "content": "对象在常态时遵循常规流。它就像是relative和fixed的合体，当在屏幕中时按常规流排版，当卷动到屏幕外时则表现如fixed。该属性的表现是现实中你见到的吸附效果。"
                                 }
                             ],
                             "default": "static",
                             "apply":[
                             	"除display属性定义为table-column-group",
                             	"table-column之外的所有元素"
-                            ]
+                            ],
+                            "succession":"",
+                            "animated":false,
+                            "calculated":"指定值",
+                            "media":"视觉"
                         },
                         {
                             "name": "z-index"
