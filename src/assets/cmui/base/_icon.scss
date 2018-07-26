@@ -24,6 +24,79 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.baseIcon-nav:before {
+  content: "\e907";
+}
+.baseIcon-navT:before {
+  content: "\e908";
+}
+.baseIcon-aim .path1:before {
+  content: "\e909";
+  color: rgb(116, 162, 202);
+}
+.baseIcon-aim .path2:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(32, 107, 171);
+}
+.baseIcon-aim .path3:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(116, 162, 202);
+}
+.baseIcon-aim .path4:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(240, 187, 93);
+}
+.baseIcon-aim .path5:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(238, 172, 56);
+}
+.baseIcon-aim .path6:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(28, 28, 26);
+}
+.baseIcon-aim .path7:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(28, 28, 26);
+}
+.baseIcon-aim .path8:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.baseIcon-aim .path9:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.baseIcon-aim .path10:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: rgb(28, 28, 26);
+}
+.baseIcon-smile:before {
+  content: "\e906";
+}
+.baseIcon-wang:before {
+  content: "\e905";
+}
+.baseIcon-lei:before {
+  content: "\e901";
+}
+.baseIcon-table:before {
+  content: "\e902";
+}
+.baseIcon-led:before {
+  content: "\e903";
+}
+.baseIcon-svg:before {
+  content: "\e904";
+}
 .baseIcon-CSS3:before {
   content: "\e900";
 }

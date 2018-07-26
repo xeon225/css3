@@ -1,5 +1,5 @@
 <template>
-  <div class="hello paddingl40">
+  <div class="hello">
     <!-- 第一层 -->
     <div v-for="(itemO,$indexO) in data">
     <!-- 第二层 -->
@@ -29,6 +29,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .cssWidth{
-  width:180px;
+  width:120px;
 }
 </style>

@@ -214,6 +214,79 @@ ol, ul {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.baseIcon-nav:before {
+  content: "\e907"; }
+
+.baseIcon-navT:before {
+  content: "\e908"; }
+
+.baseIcon-aim .path1:before {
+  content: "\e909";
+  color: #74a2ca; }
+
+.baseIcon-aim .path2:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: #206bab; }
+
+.baseIcon-aim .path3:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: #74a2ca; }
+
+.baseIcon-aim .path4:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: #f0bb5d; }
+
+.baseIcon-aim .path5:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: #eeac38; }
+
+.baseIcon-aim .path6:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: #1c1c1a; }
+
+.baseIcon-aim .path7:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: #1c1c1a; }
+
+.baseIcon-aim .path8:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: white; }
+
+.baseIcon-aim .path9:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: white; }
+
+.baseIcon-aim .path10:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: #1c1c1a; }
+
+.baseIcon-smile:before {
+  content: "\e906"; }
+
+.baseIcon-wang:before {
+  content: "\e905"; }
+
+.baseIcon-lei:before {
+  content: "\e901"; }
+
+.baseIcon-table:before {
+  content: "\e902"; }
+
+.baseIcon-led:before {
+  content: "\e903"; }
+
+.baseIcon-svg:before {
+  content: "\e904"; }
+
 .baseIcon-CSS3:before {
   content: "\e900"; }
 
@@ -5648,8 +5721,7 @@ input[type="button"].btn.block {
           box-shadow: 1px 4px 10px 2px #CCC; }
 
 body {
-  color: #5e6d82;
-  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif; }
+  color: #5e6d82; }
 
 .hljs {
   padding: 0 10px !important; }

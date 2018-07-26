@@ -58,7 +58,111 @@
                             "media":"视觉"
                         },
                         {
-                            "name": "z-index"
+                            "name": "z-index",
+                            "key": [
+                                {
+                                    "name": "auto",
+                                    "css3": false,
+                                    "content": "元素在当前层叠上下文中的层叠级别是0。元素不会创建新的局部层叠上下文，除非它是根元素。"
+                                },
+                                {
+                                    "name": "<integer>",
+                                    "css3": false,
+                                    "content": "用整数值来定义堆叠级别。可以为负值。"
+                                }
+                            ],
+                            "default": "auto",
+                            "apply":[
+                                "定位元素。即定义了position为非static的元素"
+                            ],
+                            "succession":"",
+                            "animated":"当值为<integer>时",
+                            "calculated":"指定的值",
+                            "media":"视觉"
+                        },
+                        {
+                            "name": "top",
+                            "key": [
+                                {
+                                    "name": "auto",
+                                    "css3": false,
+                                    "content": "无特殊定位，根据HTML定位规则在文档流中分配"
+                                },
+                                {
+                                    "name": "<length>",
+                                    "css3": false,
+                                    "content": "用长度值来定义距离顶部的偏移量。可以为负值。"
+                                },
+                                {
+                                    "name": "<percentage>",
+                                    "css3": false,
+                                    "content": "用百分比来定义距离顶部的偏移量。百分比参照包含块的高度。可以为负值。"
+                                }
+                            ],
+                            "default": "auto",
+                            "apply":[
+                                "定位元素。即定义了position为非static的元素"
+                            ],
+                            "succession":"",
+                            "animated":"当值为<length> <percentage>时",
+                            "calculated":"当position为static时，计算值是auto。为relative时，如果top和bottom都是auto，则它们的计算值是0；如果top和bottom其中一个为auto，则auto相当于另一个的负值，即top = -bottom；如果top和bottom的值都不为auto，则忽略bottom。否则在其它情况下，当指定值为<length>时，计算值为指定值，当指定值为<percentage>时，计算值为计算后的绝对值。除去这些情况，都为auto",
+                            "media":"视觉"
+                        },
+                        {
+                            "name": "right",
+                            "key": [
+                                {
+                                    "name": "auto",
+                                    "css3": false,
+                                    "content": "无特殊定位，根据HTML定位规则在文档流中分配"
+                                },
+                                {
+                                    "name": "<length>",
+                                    "css3": false,
+                                    "content": "用长度值来定义距离顶部的偏移量。可以为负值。"
+                                },
+                                {
+                                    "name": "<percentage>",
+                                    "css3": false,
+                                    "content": "用百分比来定义距离顶部的偏移量。百分比参照包含块的高度。可以为负值。"
+                                }
+                            ],
+                            "default": "auto",
+                            "apply":[
+                                "定位元素。即定义了position为非static的元素"
+                            ],
+                            "succession":"",
+                            "animated":"当值为<length> <percentage>时",
+                            "calculated":"当position为static时，计算值是auto。为relative时，如果right和left都是auto，则它们的计算值是0；如果right和left其中一个为auto，则auto相当于另一个的负值，即left = -right；如果right和left的值都不为auto，则忽略right。否则在其它情况下，当指定值为<length>时，计算值为指定值，当指定值为<percentage>时，计算值为计算后的绝对值。除去这些情况，都为auto",
+                            "media":"视觉"
+                        },
+                        {
+                            "name": "bottom",
+                            "key": [
+                                {
+                                    "name": "auto",
+                                    "css3": false,
+                                    "content": "无特殊定位，根据HTML定位规则在文档流中分配"
+                                },
+                                {
+                                    "name": "<length>",
+                                    "css3": false,
+                                    "content": "用长度值来定义距离顶部的偏移量。可以为负值。"
+                                },
+                                {
+                                    "name": "<percentage>",
+                                    "css3": false,
+                                    "content": "用百分比来定义距离顶部的偏移量。百分比参照包含块的高度。可以为负值。"
+                                }
+                            ],
+                            "default": "auto",
+                            "apply":[
+                                "定位元素。即定义了position为非static的元素"
+                            ],
+                            "succession":"",
+                            "animated":"当值为<length> <percentage>时",
+                            "calculated":"当position为static时，计算值是auto。为relative时，如果top和bottom都是auto，则它们的计算值是0；如果top和bottom其中一个为auto，则auto相当于另一个的负值，即top = -bottom；如果top和bottom的值都不为auto，则忽略bottom。否则在其它情况下，当指定值为<length>时，计算值为指定值，当指定值为<percentage>时，计算值为计算后的绝对值。除去这些情况，都为auto",
+                            "media":"视觉"
                         }
                     ]
                 }

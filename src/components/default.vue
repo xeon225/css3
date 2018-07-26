@@ -1,6 +1,6 @@
 <template>
-  <div class="default paddingl40 text-dark">
-    <h1>语法</h1>
+  <div class="default text-dark">
+    <h1 class="text-red">语法</h1>
     <!-- 主key -->  
     <div class="lh-28 flex-container top left">
       <strong v-text="datas.name"></strong>
@@ -12,45 +12,48 @@
       
     </div>
     <!-- 默认值 -->
-    <div class="lh-28">
+    <div class="lh-28 flex-container top left">
       <strong>默认值</strong>
       <span class="marginh10" v-text="datas.default"></span>
     </div>
     <!-- 适用于 -->
-    <div class="lh-28">
+    <div class="lh-28 flex-container top left">
       <strong>适用于</strong>
-      <span class="paddingh10 borderl lh-14" v-for="item in datas.apply">
-        <span v-text="item"></span>
-      </span>
+      <div class="flex1">
+        <span class="paddingh10 borderl lh-14" v-for="item in datas.apply">
+          <span v-text="item"></span>
+        </span>
+      </div>
+      
     </div>
     <!-- 继承性 -->
-    <div class="lh-28">
+    <div class="lh-28 flex-container top left">
       <strong>继承性</strong>
-      <span class="paddingh10 borderl lh-14" v-text="datas.succession == '' ? '无' : datas.succession">
+      <span class="paddingh10 borderl" v-text="datas.succession == '' ? '无' : datas.succession">
       </span>
     </div>
     <!-- 动画性 -->
-    <div class="lh-28">
+    <div class="lh-28 flex-container top left">
       <strong>动画性</strong>
-      <span class="paddingh10 borderl lh-14" v-text="datas.animated ? datas.animated : '否'">
+      <span class="paddingh10 borderl" v-text="datas.animated ? datas.animated : '否'">
       </span>
     </div>
     <!-- 计算值 -->
-    <div class="lh-28">
+    <div class="lh-28 flex-container top left">
       <strong>计算值</strong>
-      <span class="paddingh10 borderl lh-14" v-text="datas.calculated">
+      <span class="paddingh10 borderl" v-text="datas.calculated">
       </span>
     </div>
     <!-- 媒体 -->
-    <div class="lh-28">
+    <div class="lh-28 flex-container top left">
       <strong>媒体</strong>
-      <span class="paddingh10 borderl lh-14" v-text="datas.media">
+      <span class="paddingh10 borderl" v-text="datas.media">
       </span>
     </div>
 
-    <h1 class="margint30">取值</h1>
+    <h1 class="margint30 text-red">取值</h1>
     <div v-for="item in datas.key" class="margint10 flex-container left top">
-      <strong>
+      <strong style="min-width: 100px;">
         <span v-text="item.name"></span>
         <i class="baseIcon-CSS3 text-red" v-show="item.css3"></i>
       </strong>
@@ -109,7 +112,7 @@ export default {
 }
 .default span.lh-14{
   line-height: 14px;
-  height:14px;
+  height: 14px;
   display:inline-block;
 }
 
