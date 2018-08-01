@@ -24,7 +24,7 @@
                                 {
                                     "name": "absolute",
                                     "css3": false,
-                                    "content": "对象脱离常规流，此时偏移属性参照的是离自身最近的定位祖先元素，如果没有定位的祖先元素，则一直回溯到body元素。盒子的偏移位置不影响常规流中的任何元素，其margin不与其他任何margin折叠。"
+                                    "content": "对象脱离常规流，此时偏移属性参照的是离自身最近的定位祖先元素，如果没有定位的祖先元素，则一直回溯到body元素。<br>盒子的偏移位置不影响常规流中的任何元素，其margin不与其他任何margin折叠。"
                                 },
                                 {
                                     "name": "fixed",
@@ -44,7 +44,7 @@
                                 {
                                     "name": "sticky",
                                     "css3": true,
-                                    "content": "对象在常态时遵循常规流。它就像是relative和fixed的合体，当在屏幕中时按常规流排版，当卷动到屏幕外时则表现如fixed。该属性的表现是现实中你见到的吸附效果。"
+                                    "content": "对象在常态时遵循常规流。它就像是relative和fixed的合体，当在屏幕中时按常规流排版，当卷动到屏幕外时则表现如fixed。<br>该属性的表现是现实中你见到的吸附效果。"
                                 }
                             ],
                             "default": "static",
@@ -105,7 +105,7 @@
                             ],
                             "succession":"",
                             "animated":"当值为<length> <percentage>时",
-                            "calculated":"当position为static时，计算值是auto。为relative时，如果top和bottom都是auto，则它们的计算值是0；如果top和bottom其中一个为auto，则auto相当于另一个的负值，即top = -bottom；如果top和bottom的值都不为auto，则忽略bottom。否则在其它情况下，当指定值为<length>时，计算值为指定值，当指定值为<percentage>时，计算值为计算后的绝对值。除去这些情况，都为auto",
+                            "calculated":"当position为static时，计算值是auto。为relative时，如果top和bottom都是auto，则它们的计算值是0；<br>如果top和bottom其中一个为auto，则auto相当于另一个的负值，即top = -bottom；<br>如果top和bottom的值都不为auto，则忽略bottom。<br>否则在其它情况下，当指定值为<length>时，计算值为指定值，当指定值为<percentage>时，计算值为计算后的绝对值。除去这些情况，都为auto",
                             "media":"视觉"
                         },
                         {
@@ -133,7 +133,7 @@
                             ],
                             "succession":"",
                             "animated":"当值为<length> <percentage>时",
-                            "calculated":"当position为static时，计算值是auto。为relative时，如果right和left都是auto，则它们的计算值是0；如果right和left其中一个为auto，则auto相当于另一个的负值，即left = -right；如果right和left的值都不为auto，则忽略right。否则在其它情况下，当指定值为<length>时，计算值为指定值，当指定值为<percentage>时，计算值为计算后的绝对值。除去这些情况，都为auto",
+                            "calculated":"当position为static时，计算值是auto。为relative时，如果right和left都是auto，则它们的计算值是0；<br>如果right和left其中一个为auto，则auto相当于另一个的负值，即left = -right；<br>如果right和left的值都不为auto，则忽略right。<br>否则在其它情况下，当指定值为<length>时，计算值为指定值，当指定值为<percentage>时，计算值为计算后的绝对值。除去这些情况，都为auto",
                             "media":"视觉"
                         },
                         {
@@ -161,7 +161,87 @@
                             ],
                             "succession":"",
                             "animated":"当值为<length> <percentage>时",
-                            "calculated":"当position为static时，计算值是auto。为relative时，如果top和bottom都是auto，则它们的计算值是0；如果top和bottom其中一个为auto，则auto相当于另一个的负值，即top = -bottom；如果top和bottom的值都不为auto，则忽略bottom。否则在其它情况下，当指定值为<length>时，计算值为指定值，当指定值为<percentage>时，计算值为计算后的绝对值。除去这些情况，都为auto",
+                            "calculated":"当position为static时，计算值是auto。为relative时，如果top和bottom都是auto，则它们的计算值是0；<br>如果top和bottom其中一个为auto，则auto相当于另一个的负值，即top = -bottom；<br>如果top和bottom的值都不为auto，则忽略bottom。<br>否则在其它情况下，当指定值为<length>时，计算值为指定值，当指定值为<percentage>时，计算值为计算后的绝对值。除去这些情况，都为auto",
+                            "media":"视觉"
+                        },
+                        {
+                            "name": "left",
+                            "key": [
+                                {
+                                    "name": "auto",
+                                    "css3": false,
+                                    "content": "无特殊定位，根据HTML定位规则在文档流中分配"
+                                },
+                                {
+                                    "name": "<shape>",
+                                    "css3": false,
+                                    "content": "用长度值来定义距离顶部的偏移量。可以为负值。"
+                                },
+                                {
+                                    "name": "<percentage>",
+                                    "css3": false,
+                                    "content": "用百分比来定义距离顶部的偏移量。百分比参照包含块的高度。可以为负值。"
+                                }
+                            ],
+                            "default": "auto",
+                            "apply":[
+                                "定位元素。即定义了position为非static的元素"
+                            ],
+                            "succession":"",
+                            "animated":"当值为<length> <percentage>时",
+                            "calculated":"当position为static时，计算值是auto。为relative时，如果right和left都是auto，则它们的计算值是0；<br>如果right和left其中一个为auto，则auto相当于另一个的负值，即left = -right；<br>如果right和left的值都不为auto，则忽略right。<br>否则在其它情况下，当指定值为<length>时，计算值为指定值，当指定值为<percentage>时，计算值为计算后的绝对值。除去这些情况，都为auto",
+                            "media":"视觉"
+                        },
+                        {
+                            "name": "clip",
+                            "key": [
+                                {
+                                    "name": "auto",
+                                    "css3": false,
+                                    "content": "对象无剪切"
+                                },
+                                {
+                                    "name": "<length>",
+                                    "css3": true,
+                                    "content": "rect(<number>|auto <number>|auto <number>|auto <number>|auto)：<br> 依据上-右-下-左的顺序提供自对象左上角为(0,0)坐标计算的四个偏移数值，其中任一数值都可用auto替换，即此边不剪切。<br>上-左 方位的裁剪：从0开始剪裁直到设定值，即 上-左 方位的auto值等同于0；<br>右-下 方位的裁剪：从设定值开始剪裁直到最右边和最下边，即 右-下 方位的auto值为盒子的实际宽度和高度；<br>示例：clip:rect(auto 50px 20px auto)<br>说明：上边不剪切，右边从左起第50个像素开始剪切直至最右边，下边从上起第20个像素开始剪切直至最底部，左边不剪切"
+                                }
+                            ],
+                            "default": "auto",
+                            "apply":[
+                                "绝对定位元素"
+                            ],
+                            "succession":"",
+                            "animated":"当值为<shape>时",
+                            "calculated":"指定的值",
+                            "media":"视觉"
+                        }
+                    ]
+                },
+                {
+                    "cn": "布局",
+                    "en": "Layout",
+                    "secList": [
+                        {
+                            "name": "display",
+                            "key": [
+                                {
+                                    "name": "auto",
+                                    "css3": false,
+                                    "content": "对象无剪切"
+                                },
+                                {
+                                    "name": "<length>",
+                                    "css3": true,
+                                    "content": "rect(<number>|auto <number>|auto <number>|auto <number>|auto)：<br> 依据上-右-下-左的顺序提供自对象左上角为(0,0)坐标计算的四个偏移数值，其中任一数值都可用auto替换，即此边不剪切。<br>上-左 方位的裁剪：从0开始剪裁直到设定值，即 上-左 方位的auto值等同于0；<br>右-下 方位的裁剪：从设定值开始剪裁直到最右边和最下边，即 右-下 方位的auto值为盒子的实际宽度和高度；<br>示例：clip:rect(auto 50px 20px auto)<br>说明：上边不剪切，右边从左起第50个像素开始剪切直至最右边，下边从上起第20个像素开始剪切直至最底部，左边不剪切"
+                                }
+                            ],
+                            "default": "auto",
+                            "apply":[
+                                "绝对定位元素"
+                            ],
+                            "succession":"",
+                            "animated":"当值为<shape>时",
+                            "calculated":"指定的值",
                             "media":"视觉"
                         }
                     ]

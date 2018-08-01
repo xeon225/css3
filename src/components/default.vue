@@ -41,7 +41,7 @@
     <!-- 计算值 -->
     <div class="lh-28 flex-container top left">
       <strong>计算值</strong>
-      <span class="paddingh10 borderl" v-text="datas.calculated">
+      <span class="paddingh10 borderl" v-html="datas.calculated">
       </span>
     </div>
     <!-- 媒体 -->
@@ -57,7 +57,7 @@
         <span v-text="item.name"></span>
         <i class="baseIcon-CSS3 text-red" v-show="item.css3"></i>
       </strong>
-      <span v-text="item.content" class="paddingh10"></span>
+      <span v-html="item.content" class="paddingh10"></span>
     </div>
   </div>
 </template>
