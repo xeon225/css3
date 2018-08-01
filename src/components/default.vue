@@ -45,7 +45,7 @@
       </span>
     </div>
     <!-- 媒体 -->
-    <div class="lh-28 flex-container top left">
+    <div class="lh-28 flex-container top left" v-if="datas.media">
       <strong>媒体</strong>
       <span class="paddingh10 borderl" v-text="datas.media">
       </span>

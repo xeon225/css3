@@ -3,7 +3,7 @@
     <!-- 第一层 -->
     <div v-for="(itemO,$indexO) in data">
     <!-- 第二层 -->
-      <div v-for="(itemS,$indexS) in itemO.dataList">
+      <div v-for="(itemS,$indexS) in itemO.dataList" class="marginb20">
         <h1 class="text-darker lh-32 fs-18" v-text="itemS.cn + ' ' + itemS.en"></h1>
         <div class="margint10">
           <router-link :to="{path:'/default',query: {id1: $indexO,id2: $indexS,id3: $indexT}}" v-for="(itemT,$indexT) in itemS.secList" v-text="itemT.name" class="cssWidth text-dark dis-i"></router-link>

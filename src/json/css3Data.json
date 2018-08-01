@@ -225,24 +225,242 @@
                             "name": "display",
                             "key": [
                                 {
-                                    "name": "auto",
+                                    "name": "none",
                                     "css3": false,
-                                    "content": "对象无剪切"
+                                    "content": "隐藏对象。与visibility属性的hidden值不同，其不为被隐藏的对象保留其物理空间"
                                 },
                                 {
-                                    "name": "<length>",
+                                    "name": "inline",
+                                    "css3": false,
+                                    "content": "指定对象为内联元素。"
+                                },
+                                {
+                                    "name": "block",
+                                    "css3": false,
+                                    "content": "指定对象为块元素。"
+                                },
+                                {
+                                    "name": "list-item",
+                                    "css3": false,
+                                    "content": "指定对象为列表项目。"
+                                },
+                                {
+                                    "name": "inline-block",
+                                    "css3": false,
+                                    "content": "指定对象为内联块元素。"
+                                },
+                                {
+                                    "name": "table",
+                                    "css3": false,
+                                    "content": "指定对象作为块元素级的表格。类同于html标签<table>"
+                                },
+                                {
+                                    "name": "inline-table",
+                                    "css3": false,
+                                    "content": "指定对象作为内联元素级的表格。类同于html标签<table>"
+                                },
+                                {
+                                    "name": "table-caption",
+                                    "css3": false,
+                                    "content": "指定对象作为表格标题。类同于html标签<caption>"
+                                },
+                                {
+                                    "name": "table-cell",
+                                    "css3": false,
+                                    "content": "指定对象作为表格单元格。类同于html标签<td>"
+                                },
+                                {
+                                    "name": "table-row",
+                                    "css3": false,
+                                    "content": "指定对象作为表格行。类同于html标签<tr>"
+                                },
+                                {
+                                    "name": "table-row-group",
+                                    "css3": false,
+                                    "content": "指定对象作为表格行组。类同于html标签<tbody>"
+                                },
+                                {
+                                    "name": "table-column",
+                                    "css3": false,
+                                    "content": "指定对象作为表格列。类同于html标签<col>"
+                                },
+                                {
+                                    "name": "table-column-group",
+                                    "css3": false,
+                                    "content": "指定对象作为表格列组显示。类同于html标签<colgroup>"
+                                },
+                                {
+                                    "name": "table-header-group",
+                                    "css3": false,
+                                    "content": "指定对象作为表格标题组。类同于html标签<thead>"
+                                },
+                                {
+                                    "name": "table-footer-group",
+                                    "css3": false,
+                                    "content": "指定对象作为表格脚注组。类同于html标签<tfoot>"
+                                },
+                                {
+                                    "name": "run-in",
                                     "css3": true,
-                                    "content": "rect(<number>|auto <number>|auto <number>|auto <number>|auto)：<br> 依据上-右-下-左的顺序提供自对象左上角为(0,0)坐标计算的四个偏移数值，其中任一数值都可用auto替换，即此边不剪切。<br>上-左 方位的裁剪：从0开始剪裁直到设定值，即 上-左 方位的auto值等同于0；<br>右-下 方位的裁剪：从设定值开始剪裁直到最右边和最下边，即 右-下 方位的auto值为盒子的实际宽度和高度；<br>示例：clip:rect(auto 50px 20px auto)<br>说明：上边不剪切，右边从左起第50个像素开始剪切直至最右边，下边从上起第20个像素开始剪切直至最底部，左边不剪切"
+                                    "content": "根据上下文决定对象是内联对象还是块级对象。"
+                                },
+                                {
+                                    "name": "box",
+                                    "css3": true,
+                                    "content": "将对象作为弹性伸缩盒显示。（伸缩盒最老版本）"
+                                },
+                                {
+                                    "name": "inline-box",
+                                    "css3": true,
+                                    "content": "将对象作为内联块级弹性伸缩盒显示。（伸缩盒最老版本）"
+                                },
+                                {
+                                    "name": "flexbox",
+                                    "css3": true,
+                                    "content": "将对象作为弹性伸缩盒显示。（伸缩盒过渡版本）"
+                                },
+                                {
+                                    "name": "inline-flexbox",
+                                    "css3": true,
+                                    "content": "将对象作为内联块级弹性伸缩盒显示。（伸缩盒过渡版本）"
+                                },
+                                {
+                                    "name": "flex",
+                                    "css3": true,
+                                    "content": "将对象作为弹性伸缩盒显示。（伸缩盒最新版本）"
+                                },
+                                {
+                                    "name": "inline-flex",
+                                    "css3": true,
+                                    "content": "将对象作为内联块级弹性伸缩盒显示。（伸缩盒最新版本）"
                                 }
                             ],
-                            "default": "auto",
+                            "default": "inline",
                             "apply":[
-                                "绝对定位元素"
+                                "所有元素"
                             ],
                             "succession":"",
-                            "animated":"当值为<shape>时",
-                            "calculated":"指定的值",
+                            "animated":"",
+                            "calculated":"指定值，除浮动，绝对定位和根元素外",
                             "media":"视觉"
+                        },
+                        {
+                            "name": "float",
+                            "key": [
+                                {
+                                    "name": "none",
+                                    "css3": false,
+                                    "content": "设置对象不浮动"
+                                },
+                                {
+                                    "name": "left",
+                                    "css3": false,
+                                    "content": "设置对象浮在左边"
+                                },
+                                {
+                                    "name": "right",
+                                    "css3": false,
+                                    "content": "设置对象浮在右边"
+                                }
+                            ],
+                            "default": "none",
+                            "apply":[
+                                "所有元素"
+                            ],
+                            "succession":"",
+                            "animated":"",
+                            "calculated":"指定值"
+                        },
+                        {
+                            "name": "clear",
+                            "key": [
+                                {
+                                    "name": "none",
+                                    "css3": false,
+                                    "content": "允许两边都可以有浮动对象"
+                                },
+                                {
+                                    "name": "both",
+                                    "css3": false,
+                                    "content": "不允许有浮动对象"
+                                },
+                                {
+                                    "name": "left",
+                                    "css3": false,
+                                    "content": "不允许左边有浮动对象"
+                                },
+                                {
+                                    "name": "right",
+                                    "css3": false,
+                                    "content": "不允许右边有浮动对象"
+                                }
+                            ],
+                            "default": "none",
+                            "apply":[
+                                "块级元素"
+                            ],
+                            "succession":"",
+                            "animated":"",
+                            "calculated":"指定值"
+                        },
+                        {
+                            "name": "visibility",
+                            "key": [
+                                {
+                                    "name": "visible",
+                                    "css3": false,
+                                    "content": "设置对象可视"
+                                },
+                                {
+                                    "name": "hidden",
+                                    "css3": false,
+                                    "content": "设置对象隐藏"
+                                },
+                                {
+                                    "name": "collapse",
+                                    "css3": false,
+                                    "content": "主要用来隐藏表格的行或列。隐藏的行或列能够被其他内容使用。对于表格外的其他对象，其作用等同于hidden。"
+                                }
+                            ],
+                            "default": "visible",
+                            "apply":[
+                                "所有元素"
+                            ],
+                            "succession":"有",
+                            "animated":"是",
+                            "calculated":"指定值"
+                        },
+                        {
+                            "name": "overflow",
+                            "key": [
+                                {
+                                    "name": "visible",
+                                    "css3": false,
+                                    "content": "对溢出内容不做处理，内容可能会超出容器。"
+                                },
+                                {
+                                    "name": "hidden",
+                                    "css3": false,
+                                    "content": "隐藏溢出容器的内容且不出现滚动条。"
+                                },
+                                {
+                                    "name": "scroll",
+                                    "css3": false,
+                                    "content": "隐藏溢出容器的内容，溢出的内容将以卷动滚动条的方式呈现。"
+                                },
+                                {
+                                    "name": "auto",
+                                    "css3": false,
+                                    "content": "当内容没有溢出容器时不出现滚动条，当内容溢出容器时出现滚动条，按需出现滚动条。此为body对象和textarea的默认值。"
+                                }
+                            ],
+                            "default": "visible",
+                            "apply":[
+                                "块容器，伸缩盒容器，grid容器"
+                            ],
+                            "succession":"",
+                            "animated":"",
+                            "calculated":"指定值"
                         }
                     ]
                 }
